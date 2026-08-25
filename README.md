@@ -105,4 +105,4 @@ Leadership has shaped my college experience as much as technical work has. I hav
 
 I'm applying to the SDG Innovation Summit Malaysia 2026 because I want to test my ideas against real feedback from other young innovators and refine the dashboard from a concept into something I can pilot. I see this as a chance to move from designing solutions in isolation to building them collaboratively — which is ultimately what sustainable innovation requires.
 
-© 2026 Edina Sherin | SDG Innovation Summit Malaysia 2026 Portfolio
+ Edina Sherin | SDG Innovation Summit Malaysia 2026 Portfolio
