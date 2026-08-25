@@ -1,0 +1,10 @@
+# Personal Statement — SDG Innovation Summit Malaysia 2026
+### Edina Sherin
+
+I am a third-year Information Technology undergraduate from Tamil Nadu, India, drawn to the SDGs through a simple observation: many of the water and food security challenges I've seen growing up mirror what communities across South and Southeast Asia face. This dual perspective shapes how I approach sustainable innovation — not as an abstract goal, but as a problem rooted in daily life.
+
+My primary project is a Community Rainwater Harvesting & Urban Farming Initiative, designed for Malaysia's PPR flat communities. It captures monsoon rainwater for shared urban gardens, directly supporting SDG 13 (Climate Action) through practical, low-cost adaptation to Malaysia's seasonal rainfall patterns. What distinguishes the project, though, is where my IT background comes in: I designed a companion tracking dashboard that logs rainwater captured, water displaced from the treated supply, produce harvested, and participating households — turning a community sustainability effort into a data-driven system. This reflects SDG 9 (Industry, Innovation and Infrastructure): using accessible digital tools to make grassroots interventions measurable and scalable, not just well-intentioned.
+
+Leadership has shaped my college experience as much as technical work has. I have led junior students in communication development, helping them build confidence and improve their communication skills, and I serve as a trusted advisor and mentor to juniors navigating academic, technical, and college-related challenges. I also led my team at the Nimirdhu Nil Hackathon and have actively participated in multiple hackathons, learning to build and pitch ideas under pressure alongside a team.
+
+I'm applying to the SDG Innovation Summit Malaysia 2026 because I want to test my ideas against real feedback from other young innovators and refine the dashboard from a concept into something I can pilot. I see this as a chance to move from designing solutions in isolation to building them collaboratively — which is ultimately what sustainable innovation requires.
