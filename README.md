@@ -1,4 +1,4 @@
-# AquaGrow — Intelligent Rainwater Allocation Under Water Scarcity (V4)
+# AquaGrow — Intelligent Rainwater Allocation Under Water Scarcity 
 
 *A simulation-based study comparing allocation strategies for multi-zone irrigation*
 
