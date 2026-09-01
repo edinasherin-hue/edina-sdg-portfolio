@@ -3,169 +3,243 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edina Sherin | SDG Portfolio</title>
+<title>AquaGrow | Intelligent Rainwater Allocation Under Water Scarcity</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
 *{box-sizing:border-box}
 body{font-family:Arial,sans-serif;margin:0;background:#f4f8f6;color:#1f2937;line-height:1.6}
-header{background:#0f766e;color:white;padding:40px 24px;text-align:center}
+header{background:#0f766e;color:white;padding:44px 24px;text-align:center}
 header h1{margin:0;font-size:26px}
 header p{margin:8px 0 0;opacity:.9;font-size:14px}
-.links{margin-top:14px}
-.links a{color:white;margin:0 10px;text-decoration:underline;font-size:13px}
-main{max-width:820px;margin:auto;padding:32px 20px}
-.card{background:white;padding:28px 30px;border-radius:14px;margin:18px 0;box-shadow:0 3px 10px rgba(0,0,0,.06);overflow-wrap:break-word}
-.card p, .card li{max-width:100%;overflow-wrap:break-word}
-h2{color:#0f766e;margin:0 0 16px;font-size:19px}
-h3{margin:22px 0 8px;font-size:15px}
-h3:first-of-type{margin-top:0}
+.badge-row{margin-top:12px}
+.tag{display:inline-block;background:rgba(255,255,255,.15);color:white;padding:4px 12px;border-radius:999px;font-size:12px;margin:3px}
+main{max-width:900px;margin:auto;padding:32px 20px}
+.card{background:white;padding:28px 30px;border-radius:14px;margin:18px 0;box-shadow:0 3px 10px rgba(0,0,0,.06)}
+h2{color:#0f766e;margin:0 0 14px;font-size:19px}
+h3{margin:18px 0 8px;font-size:15px}
 p{margin:8px 0}
-ul{margin:10px 0;padding-left:22px;line-height:1.7}
+ul{margin:10px 0;padding-left:22px}
 li{margin-bottom:6px}
-.badge{display:inline-block;background:#0f766e;color:white;padding:4px 10px;border-radius:999px;font-size:11px;margin:3px 6px 3px 0}
-.status{display:inline-block;background:#fbbf24;color:#1f2937;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:bold;margin:8px 0 0}
-.table-wrap{overflow-x:auto;margin-top:14px;border-radius:8px}
-table{width:100%;border-collapse:collapse;font-size:13px;min-width:600px}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #e5e7eb;vertical-align:top}
+.table-wrap{overflow-x:auto;margin-top:12px;border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:12.5px;min-width:480px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e7eb}
 th{color:#0f766e}
-.note{font-size:12px;color:#6b7280;margin:6px 0 0}
-.placeholder{color:#9ca3af;font-style:italic}
-.project-mini{border-left:3px solid #0f766e;padding:2px 0 2px 16px;margin:8px 0 0}
+.num-col{text-align:right}
+.highlight{background:#f0fdf4;border-left:4px solid #0f766e;padding:14px 16px;border-radius:6px;margin:14px 0}
+.finding-flaw{background:#fef2f2;border-left:4px solid #dc2626;padding:14px 16px;border-radius:6px;margin:14px 0}
+pre{background:#1f2937;color:#e5e7eb;padding:14px;border-radius:8px;overflow-x:auto;font-size:12px}
+code{background:#f3f4f6;padding:2px 6px;border-radius:4px;font-size:13px}
+pre code{background:transparent;padding:0;color:inherit;font-size:inherit}
+.chart-container{position:relative;height:320px;margin-top:16px}
 footer{text-align:center;padding:24px;color:#666;font-size:13px}
 </style>
 </head>
 <body>
+
 <header>
-<h1>Edina Sherin</h1>
-<p>B.Tech Information Technology | 3rd Year Undergraduate</p>
-<div class="links">
-<a href="https://github.com/edinasherin-hue/edina-sdg-portfolio">GitHub</a>
-<a href="https://www.linkedin.com/in/edina-sherin-537770353">LinkedIn</a>
-<a href="mailto:edinasherin1@gmail.com">Email</a>
+<h1>🌧️ AquaGrow</h1>
+<p>Intelligent rainwater allocation under water scarcity — a simulation-based study comparing allocation strategies for multi-zone irrigation</p>
+<div class="badge-row">
+<span class="tag">Python</span>
+<span class="tag">Algorithm Design</span>
+<span class="tag">Sensitivity Analysis</span>
+<span class="tag">3 Experiments</span>
 </div>
 </header>
 
 <main>
 
 <div class="card">
-<h2>About Me</h2>
-<p>I am a third-year Information Technology undergraduate from Tamil Nadu, India, with a strong interest in applying software and web development skills to real-world sustainability challenges. My focus areas include full-stack web development, data-driven problem solving, and designing accessible digital tools for underserved communities. Water scarcity and food security are issues I have seen firsthand growing up in Tamil Nadu, and this portfolio reflects my interest in bringing that lived perspective to Malaysia's SDG agenda — showing how solutions can translate across borders in South and Southeast Asia.</p>
+<h2>Research Question</h2>
+<p>How should limited harvested rainwater be allocated among competing irrigation zones under different levels of water scarcity, priority differences, and rainfall uncertainty?</p>
+<p>AquaGrow is evaluated as <strong>one allocation strategy among several</strong>, not a predetermined winner — the goal is to find the conditions under which each strategy actually performs best.</p>
 </div>
 
 <div class="card">
-<h2>Featured SDG Project</h2>
-<h3>Community Rainwater Harvesting & Urban Farming Initiative</h3>
-<div>
-<span class="badge">SDG 2</span><span class="badge">SDG 6</span><span class="badge">SDG 11</span><span class="badge">SDG 13</span>
+<h2>Three Strategies Compared</h2>
+<ul>
+<li><strong>Baseline</strong> — fixed-threshold, fixed dose, first-come-first-served</li>
+<li><strong>Fair-share</strong> — equal proportional split among needy zones, no priority or rain awareness</li>
+<li><strong>AquaGrow</strong> — priority-weighted allocation (moisture deficit × crop priority) with a rain-signal reserve</li>
+</ul>
 </div>
-<div><span class="status">Status: Concept stage — seeking pilot partner</span></div>
 
-<h3 style="margin-top:20px">Problem Statement</h3>
-<p>Food & beverages made up 15.7% of average Malaysian household spending in 2024, meaning grocery costs are a significant, recurring pressure on many households. At the same time, most Malaysian homes rely entirely on treated piped water even for non-potable uses like gardening, while Malaysia's heavy monsoon rainfall goes largely uncaptured. Combining the two — capturing free rainwater to grow food locally — offers a way to ease both pressures at once. This challenge mirrors what I have observed in parts of Tamil Nadu, India, where seasonal water stress and rising food costs affect similar low-income communities, reinforcing the case for a solution that could eventually be adapted across both regions.</p>
+<div class="card">
+<h2>Experiment 1 — Scarcity Curve</h2>
+<p><strong>Question:</strong> How does demand satisfaction change as tank capacity increases, for each strategy? Tested 10L–150L, 40 independent 30-day scenarios per capacity per strategy.</p>
+<div class="chart-container">
+  <canvas id="scarcityChart" role="img" aria-label="Line chart showing Mean Demand Satisfaction (%) versus Tank Capacity (Litres) across Baseline, Fair-share, and AquaGrow strategies">
+    <p>Fallback: Mean Demand Satisfaction increases with Tank Capacity. Fair-share and AquaGrow closely match, reaching ~98.8% at 150L, while Baseline plateaus near ~22%.</p>
+  </canvas>
+</div>
+<div class="highlight">
+Fair-share and AquaGrow track each other closely across the <em>entire</em> range, both dramatically outperforming Baseline at every capacity. Baseline never exceeds ~22% satisfaction even with abundant water, because it only ever serves whichever zone is checked first and ignores the rest.
+</div>
+</div>
 
-<h3>The Solution</h3>
-<p>A community-driven system that captures rainwater for reuse in shared urban vegetable and herb gardens, paired with environmental education — and a digital dashboard that turns this from a standalone gardening project into an IT-driven impact-tracking system.</p>
-<p style="font-weight:bold;margin-bottom:2px">Physical system:</p>
-<ul>
-<li>Low-cost rainwater harvesting systems (gutters, tanks, basic filtration).</li>
-<li>Shared vegetable & herb gardens irrigated with harvested water.</li>
-<li>Environmental workshops for students and residents.</li>
-</ul>
-<p style="font-weight:bold;margin-bottom:2px">System flow:</p>
-<p>Rainwater → Storage → Irrigation → Community Garden → Digital Dashboard</p>
-<p style="font-weight:bold;margin-bottom:2px">The digital layer (where my IT background comes in):</p>
-<p>A dashboard designed to track project data such as:</p>
-<ul>
-<li>Litres of rainwater captured</li>
-<li>Litres of treated (piped) water displaced</li>
-<li>Kg of produce harvested</li>
-<li>Number of participating households</li>
-<li>Workshops conducted</li>
-<li>Estimated system cost and measured savings</li>
-</ul>
-<p>This is the part of the project I plan to actually build and demo — a lightweight web app that community coordinators could use to log tank levels and harvests, turning a sustainability initiative into a data-backed, IT-supported one.</p>
-
-<h3>Target Location</h3>
-<p>Pilot site: a PPR (Projek Perumahan Rakyat) flat community in Kuala Lumpur. PPR flats are purpose-built low-cost housing, making them a relevant setting to test whether a low-cost community-scale intervention can deliver measurable benefits.</p>
-
-<h3>Projected Impact</h3>
-<p style="font-size:13px;color:#6b7280">This project is at <strong>concept stage</strong>. The figures below are planning assumptions, not measured results — laid out to show the reasoning, not to overstate certainty.</p>
-<p style="font-size:13px;color:#6b7280"><strong>Pipeline:</strong> Research data → Planning assumptions → Projected targets → Future pilot measurements</p>
+<div class="card">
+<h2>Experiment 2 — Priority Sensitivity</h2>
+<p><strong>Question:</strong> Does AquaGrow's priority-weighting help the highest-priority zone when the weight gap is made more aggressive? Tested at 40L tank, 40 scenarios per configuration. Weight configurations were fixed before running the experiment, not tuned afterward to force a result.</p>
 <div class="table-wrap">
 <table>
-<tr><th>Metric</th><th>Value</th><th>Type</th><th>How It's Calculated</th></tr>
-<tr><td>Illustrative annual rainwater capture potential</td><td>≈120,000 L/year</td><td>Planning assumption</td><td>100 m² catchment × 2,000 mm annual rainfall × 0.80 runoff factor × 0.75 collection efficiency</td></tr>
-<tr><td>Estimated irrigation demand</td><td>≈109,500 L/year</td><td>Planning assumption</td><td>100 m² garden × assumed 3 L/m²/day × 365 days</td></tr>
-<tr><td>Illustrative produce target</td><td>≈200 kg/year</td><td>Planning assumption</td><td>100 m² growing area × 2 kg/m²/year planning assumption</td></tr>
-<tr><td>Households/community members reached</td><td>To be measured during pilot</td><td>Future measurement</td><td>Actual number of participating households</td></tr>
-<tr><td>Treated water displaced</td><td>To be measured during pilot</td><td>Future measurement</td><td>Comparison of rainwater used for irrigation against irrigation water that would otherwise require treated piped supply</td></tr>
-<tr><td>Food actually produced</td><td>To be measured during pilot</td><td>Future measurement</td><td>Harvest records logged via the dashboard</td></tr>
+<thead>
+  <tr>
+    <th scope="col">Configuration</th>
+    <th scope="col" class="num-col">Weights (C / B / A)</th>
+    <th scope="col" class="num-col">Overall Satisfaction %</th>
+    <th scope="col" class="num-col">Fairness %</th>
+    <th scope="col" class="num-col">Zone A Satisfaction %</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>Fair-share (no priority)</td><td class="num-col">—</td><td class="num-col">47.8</td><td class="num-col">45.7</td><td class="num-col">40.4</td></tr>
+  <tr><td>AquaGrow P1 (original)</td><td class="num-col">0.8 / 1.0 / 1.5</td><td class="num-col">51.0</td><td class="num-col">49.1</td><td class="num-col">45.0</td></tr>
+  <tr><td>AquaGrow P2</td><td class="num-col">0.5 / 1.0 / 2.0</td><td class="num-col">51.6</td><td class="num-col">48.9</td><td class="num-col">51.1</td></tr>
+  <tr><td>AquaGrow P3</td><td class="num-col">0.5 / 1.0 / 3.0</td><td class="num-col">51.7</td><td class="num-col">48.0</td><td class="num-col">54.5</td></tr>
+  <tr><td>AquaGrow P4</td><td class="num-col">0.2 / 1.0 / 4.0</td><td class="num-col">52.2</td><td class="num-col">43.7</td><td class="num-col">57.7</td></tr>
+</tbody>
 </table>
 </div>
-
-<h3>Dashboard Demo (Prototype)</h3>
-<p style="font-size:13px;color:#6b7280"><em>Demo data — not pilot results.</em> This illustrates what the tracking dashboard would look like once in use.</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:10px">
-<div style="background:#f0fdf4;border-radius:10px;padding:14px;text-align:center">
-<div style="font-size:20px;font-weight:bold;color:#0f766e">8,450 L</div>
-<div style="font-size:12px;color:#4b5563">Rainwater captured</div>
-</div>
-<div style="background:#f0fdf4;border-radius:10px;padding:14px;text-align:center">
-<div style="font-size:20px;font-weight:bold;color:#0f766e">6,900 L</div>
-<div style="font-size:12px;color:#4b5563">Treated water displaced</div>
-</div>
-<div style="background:#f0fdf4;border-radius:10px;padding:14px;text-align:center">
-<div style="font-size:20px;font-weight:bold;color:#0f766e">42 kg</div>
-<div style="font-size:12px;color:#4b5563">Produce harvested</div>
-</div>
-<div style="background:#f0fdf4;border-radius:10px;padding:14px;text-align:center">
-<div style="font-size:20px;font-weight:bold;color:#0f766e">18</div>
-<div style="font-size:12px;color:#4b5563">Households</div>
-</div>
-<div style="background:#f0fdf4;border-radius:10px;padding:14px;text-align:center">
-<div style="font-size:20px;font-weight:bold;color:#0f766e">3</div>
-<div style="font-size:12px;color:#4b5563">Workshops</div>
+<div class="highlight">
+With the original mild weights, AquaGrow showed limited advantage over Fair-share for Zone A (45.0% vs 40.4%). But with a wider, deliberately more aggressive weight spread (P4), a clear trade-off emerges: Zone A's satisfaction climbs from 40.4% to 57.7%, while overall fairness drops from 49.1% to 43.7%. This confirms the earlier modest result wasn't a flaw in the algorithm — the original weights just weren't strong enough to produce a pronounced redistribution.
 </div>
 </div>
 
-<h3>Next Steps</h3>
+<div class="card">
+<h2>Experiment 3 — Rainfall Probability & Reserve Strategy</h2>
+<p><strong>Question:</strong> Given a simulated rain signal calibrated to a known daily rain probability, what reserve fraction performs best?</p>
+<p style="font-size:13px;color:#6b7280"><em>Honesty note: this models an environment with a fixed daily rain probability and a signal calibrated to that same probability — it is not a real weather forecasting system. It tests reserve strategy, not forecast skill.</em></p>
+<div class="table-wrap">
+<table>
+<thead>
+  <tr>
+    <th scope="col">Rain Probability</th>
+    <th scope="col" class="num-col">Best Reserve</th>
+    <th scope="col" class="num-col">Satisfaction at Best Reserve</th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>20%</td><td class="num-col">0%</td><td class="num-col">26.2%</td></tr>
+  <tr><td>50%</td><td class="num-col">0%</td><td class="num-col">77.5%</td></tr>
+  <tr><td>80%</td><td class="num-col">0%</td><td class="num-col">97.5%</td></tr>
+</tbody>
+</table>
+</div>
+<p style="font-size:12.5px;color:#6b7280">"Best reserve" is defined here as the reserve fraction producing the highest mean demand satisfaction in this experiment.</p>
+<div class="finding-flaw">
+<strong>The most important discovery in this project:</strong> reserving water never helps, at any rain probability tested. Satisfaction monotonically decreases as reserve fraction increases, in every scenario. Rainfall that arrives tomorrow adds to the tank regardless of whether water was reserved today — reserving doesn't protect anything, it only withholds water from zones that need it right now. This reveals a genuine conceptual flaw in the reserve mechanism as originally designed, not a tuning problem.
+</div>
+</div>
+
+<div class="card">
+<h2>Overall Conclusions</h2>
 <ul>
-<li>Partner with a local Residents' Association or NGO for a pilot site.</li>
-<li>Apply for relevant grant or competition funding.</li>
-<li>Build a simple cost/impact tracking tool.</li>
-<li>Document pilot results with photos and data.</li>
+<li><strong>Intelligent splitting matters enormously</strong> — both Fair-share and AquaGrow vastly outperform fixed-threshold Baseline at every scarcity level tested.</li>
+<li><strong>Priority-weighting requires a strong enough signal to matter</strong> — mild weights show little differentiation; aggressive weights produce a real, quantifiable trade-off between prioritizing high-value zones and system-wide fairness.</li>
+<li><strong>The current rain-reserve mechanism is actively counterproductive</strong> and should be redesigned or removed.</li>
+</ul>
+<p>Rather than claiming AquaGrow is simply "better," this project identifies specifically <em>when</em> priority-weighting helps and specifically <em>where</em> the original design fails — backed by 40+ scenario-runs per condition rather than single seeded results.</p>
+</div>
+
+<div class="card">
+<h2>Directions for Further Work</h2>
+<ul>
+<li>Redesign the rain-reserve mechanism so it actually provides a benefit (e.g. conditioning on anticipated demand spikes, not simply "rain might come")</li>
+<li>Extend the priority sensitivity test across multiple tank capacities</li>
+<li>Add real historical rainfall data for a specific location instead of a probability-based synthetic model</li>
 </ul>
 </div>
 
 <div class="card">
-<h2>Other Projects</h2>
-<div class="project-mini">
-<h3>E-Waste Drop-off Locator & Awareness Web App</h3>
-<div>
-<span class="badge">SDG 11</span><span class="badge">SDG 12</span>
-</div>
-<div><span class="status">Status: Concept / early prototype</span></div>
-<p>Many Malaysians don't know where their nearest legal e-waste drop-off point is, so old electronics often end up in general waste instead of being recycled.</p>
-<p>A simple web app (map + search) showing nearby registered e-waste collection points and retailer take-back schemes, with short guides on what counts as e-waste and why it matters.</p>
-</div>
+<h2>Try It Yourself</h2>
+<pre><code># Run with python or python3 depending on your OS
+python experiment_1_scarcity_curve.py
+python experiment_2_priority_sensitivity.py
+python experiment_3_rainfall_probability_reserve.py</code></pre>
 </div>
 
 <div class="card">
-<h2>My SDG Vision</h2>
-<p>I believe technology should solve everyday community problems. My goal is to build digital and sustainable solutions that improve education, environmental resilience, and quality of life.</p>
-</div>
-
-<div class="card">
-<h2>Personal Statement — SDG Innovation Summit Malaysia 2026</h2>
-<p>I am a third-year Information Technology undergraduate from Tamil Nadu, India, drawn to the SDGs through a simple observation: many of the water and food security challenges I've seen growing up mirror what communities across South and Southeast Asia face. This dual perspective shapes how I approach sustainable innovation — not as an abstract goal, but as a problem rooted in daily life.</p>
-<p>My primary project is a Community Rainwater Harvesting & Urban Farming Initiative, designed for Malaysia's PPR flat communities. It captures monsoon rainwater for shared urban gardens, directly supporting SDG 13 (Climate Action) through practical, low-cost adaptation to Malaysia's seasonal rainfall patterns. What distinguishes the project, though, is where my IT background comes in: I designed a companion tracking dashboard that logs rainwater captured, water displaced from the treated supply, produce harvested, and participating households — turning a community sustainability effort into a data-driven system. This reflects SDG 9 (Industry, Innovation and Infrastructure): using accessible digital tools to make grassroots interventions measurable and scalable, not just well-intentioned.</p>
-<p>Leadership has shaped my college experience as much as technical work has. I have led junior students in communication development, helping them build confidence and improve their communication skills, and I serve as a trusted advisor and mentor to juniors navigating academic, technical, and college-related challenges. I also led my team at the Nimirdhu Nil Hackathon and have actively participated in multiple hackathons, learning to build and pitch ideas under pressure alongside a team.</p>
-<p>I'm applying to the SDG Innovation Summit Malaysia 2026 because I want to test my ideas against real feedback from other young innovators and refine the dashboard from a concept into something I can pilot. I see this as a chance to move from designing solutions in isolation to building them collaboratively — which is ultimately what sustainable innovation requires.</p>
+<h2>What I Practiced</h2>
+<ul>
+<li>Designing and running a proper sensitivity analysis instead of tuning parameters until a desired result appeared</li>
+<li>Discovering and honestly reporting a genuine design flaw through systematic experimentation</li>
+<li>Producing a scarcity curve as the central evidence graph for a technical report</li>
+<li>Separating "when does X help" from "does X always win" as the actual research contribution</li>
+</ul>
 </div>
 
 </main>
 
 <footer>
- Edina Sherin | SDG Innovation Summit Malaysia 2026 Portfolio
+Built by Edina Sherin
 </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const canvas = document.getElementById('scarcityChart');
+  if (!canvas || typeof Chart === 'undefined') {
+    return;
+  }
+
+  new Chart(canvas, {
+    type: 'line',
+    data: {
+      labels: ['10L', '20L', '30L', '40L', '50L', '60L', '75L', '100L', '125L', '150L'],
+      datasets: [
+        {
+          label: 'Baseline',
+          data: [4.2, 9.1, 14.2, 18.4, 18.9, 19.7, 21.2, 21.4, 21.8, 21.7],
+          borderColor: '#dc2626',
+          backgroundColor: '#dc2626',
+          tension: 0.2,
+          pointRadius: 3
+        },
+        {
+          label: 'Fair-share',
+          data: [5.8, 14.0, 32.5, 53.0, 66.2, 80.7, 85.2, 96.0, 98.7, 98.8],
+          borderColor: '#0f766e',
+          backgroundColor: '#0f766e',
+          tension: 0.2,
+          pointRadius: 3
+        },
+        {
+          label: 'AquaGrow',
+          data: [5.7, 13.2, 30.9, 50.8, 65.0, 80.2, 84.9, 95.9, 98.7, 98.8],
+          borderColor: '#f59e0b',
+          backgroundColor: '#f59e0b',
+          tension: 0.2,
+          pointRadius: 3
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: {
+          title: { display: true, text: 'Tank Capacity' }
+        },
+        y: {
+          min: 0,
+          max: 100,
+          title: { display: true, text: 'Mean Demand Satisfaction (%)' },
+          ticks: {
+            callback: (value) => `${value}%`
+          }
+        }
+      },
+      plugins: {
+        legend: { position: 'top' },
+        tooltip: {
+          callbacks: {
+            label: (context) => ` ${context.dataset.label}: ${context.parsed.y}%`
+          }
+        }
+      }
+    }
+  });
+});
+</script>
+
 </body>
 </html>
