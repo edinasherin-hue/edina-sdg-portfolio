@@ -1,0 +1,6 @@
+config,zone_C_weight,zone_B_weight,zone_A_weight,mean_satisfaction_pct,mean_fairness_pct,mean_zone_A_satisfaction_pct
+Fair-share (no priority),—,—,—,47.8,45.7,40.4
+AquaGrow P1 (0.8/1.0/1.5),0.8,1.0,1.5,51.0,49.1,45.0
+AquaGrow P2 (0.5/1.0/2.0),0.5,1.0,2.0,51.6,48.9,51.1
+AquaGrow P3 (0.5/1.0/3.0),0.5,1.0,3.0,51.7,48.0,54.5
+AquaGrow P4 (0.2/1.0/4.0),0.2,1.0,4.0,52.2,43.7,57.7
